@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(61, 61, 61);
+           
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            /* margin-bottom: 112px; */
+            margin-top: -10px;
+            text-transform: uppercase;
+            
+            
+        
+            
+        }
+
+        .box {
+            margin: 220px auto;
+            border-radius: 24px;
+            /* border: 2px solid red; */
+            width: 300px;
+            height: 200px;
+            padding: 40px;
+            top: 50%; 
+            left: 50%; 
+            background: rgb(44, 33, 33);
+          
+        }
+
+        .form-group {
+            text-align: center;
+            /* margin-top: 0px; */
+            display: flex;
+            flex-direction: column;
+               
+
+        }
+
+        .box input[type="text"],
+        input[type="password"] {
+            border: none;
+            border: 2px solid cyan;
+            color: white;
+            display: block;
+            background-color: rgb(44, 33, 33) ;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            /* border-color: cyan; */
+            padding-inline: 40px;
+            outline: none;
+                       
+        }
+
+        input[type="text"]:focus{
+            width: 180px;
+            border: 2px solid greenyellow;
+        }
+
+        .btn{
+            text-align: center;
+            display: block;
+            margin: auto;
+            border: none;
+            border: 2px solid cyan;
+            border-radius: 20px;
+            /* margin-left: 100px; */
+            margin-top: 08px;
+            padding-top: 05px;
+            padding-bottom: 05px;
+            padding-inline: 30px;
+            font-size: 14px;
+            cursor: pointer;
+           
+                       
+        }
+
+        .btn:focus{
+            width: 110px;
+           
+        }
+        
+
+        .btn:hover{
+            background-color: cyan;
+            border: 2px solid greenyellow;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="Login"></label>
+            <input type="text" name="Login" placeholder="userName">
+            <label for="Login"></label>
+            <input type="text" name="Login" placeholder="PassWord">
+
+        </div>
+        <button class="btn">Login</button>
+    </div>
+
+</body>
+
+</html>
