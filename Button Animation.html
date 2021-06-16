@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styling</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 250px auto;
+         
+        }
+
+        .btn{
+            font-size: 25px;
+            background: none;
+            padding: 15px 20px;
+            margin: 10px;
+            border: 2px solid brown;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.8s;
+            position: relative;
+            overflow: hidden;
+        
+
+        }
+
+        .btn1, .btn2{
+            /* background-color: white; */
+            /* color: black; */
+        }
+
+        .btn3, .btn4 {
+            /* background-color: blue; */
+            /* color: black; */
+            
+        }
+
+      
+        .btn1:hover, .btn2:hover {
+            /* background-color: blue; */
+            /* color: black; */
+        }
+
+        .btn3:hover, .btn4:hover {
+            /* background-color: white; */
+            /* color: black; */
+        }
+
+        .btn::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 0;
+            background: burlywood;
+            z-index: -1;
+            transition: 1s;
+        }
+
+        .btn1::before, .btn3::before{
+            top: 0;
+            border-radius: 0 0 50% 50%;
+        }
+
+        .btn2::before,.btn4::before{
+            bottom: 0;
+            border-radius: 50% 50% 0 0;
+        }
+        .btn3::before,.btn4::before{
+            height: 180%;
+        }
+
+        .btn1:hover::before,.btn2:hover::before{
+            height: 180%;
+        }
+
+        .btn3:hover::before,.btn4:hover::before{
+            height: 0%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <Button class="btn1 btn">Button 1</Button>
+        <Button class="btn2 btn">Button 2</Button>
+        <Button class="btn3 btn">Button 3</Button>
+        <Button class="btn4 btn">Button 4</Button>
+        </div>
+</body>
+
+</html>
